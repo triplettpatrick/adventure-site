@@ -1,10 +1,18 @@
-import './App.css';
+import React from 'react';
+import './App.css'; 
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+function App() { //functional component which uses 'react-router-dom' package to set up routing in a web application
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
