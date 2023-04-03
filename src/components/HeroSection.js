@@ -1,4 +1,5 @@
-import { Button } from 'bootstrap';
+import { Button } from './Button';
+import '../App.css'; 
 import React from 'react';
 import './HeroSection.css';
 
@@ -6,7 +7,6 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-        {/* <video src="%PUBLIC_URL%/videos/video-1.mp4" autoPlay loop muted /> */}
         <h1>ADVENTURE AWAITS</h1>
         <p>What are you waiting for?</p>
         <div className="hero-btns">
